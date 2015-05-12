@@ -11,7 +11,7 @@
         
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     </head>
-
+    <meta charset="utf-8" /> 
     <body>
         <div class="intro deep-purple lighten-2 z-depth-1">
             <h1 class="grey-text text-lighten-5">Insercion Binaria</h1>
@@ -19,45 +19,39 @@
         </div>
         
         <div class="container about">
-            <h5>Acerca de mi</h5>
-            <h6>FFXIV</h6>
-            <hr>
             <div class="row">
-                <div class="col s12 m4 14">
-                </div>
-                <div class="col s12 m4 14">
-                    <h6>Profile</h6>
+                <div class="col s12 m12 14">
                     <div class="card green-grey darken-1">
-                        <div class="card-content  black-text">
-                            <img src="img/profile.png" width="64" height="64">
-                            <p>Monogatari</p>
+                        <div class="card-content  black-text" style="text-align: justify">
+                        <h5>Busqueda Binaria</h5>
+                        Es un método que se basa en la división sucesiva del espacio ocupado por el vector en sucesivas mitades, hasta encontrar el elemento buscado.
+ 
+                        Esta búsqueda utiliza un método de “divide y vencerás” para localizar el valor deseado. Con este método se examina primero el elemento central de la lista; si este es el elemento buscado entonces la búsqueda ha terminado. En caso contrario se determina si el elemento buscado está en la primera o segunda mitad de la lista y a continuación se repite el proceso anterior, utilizando el elemento central de esta sublista. Este tipo de búsqueda se utiliza en vectores ordenados.
+                        <br>
+                        <br>
+                        Este algoritmo reduce el tiempo de búsqueda considerablemente, ya que disminuye exponencialmente el número de iteraciones necesarias.
+
+                        Está altamente recomendado para buscar en arrays de gran tamaño. Por ejemplo, en uno conteniendo 50.000.000 elementos, realiza como máximo 26 comparaciones (en el peor de los casos).
+                        <hr>
+                        <div class="container portfolio">
+                        <div class="row">
+                            <div class="col s12 m12 l12 portfolio-holder">
+                                <h5>Pseudocodigo</h5>
+                                <img class="materialboxed" src="img/bbpseudo.png">
+                                <h5>Busqueda Binaria en C</h5>
+                                <img class="materialboxed" src="img/bbcode.png">
+                                <h5>Busqueda Binaria Recursiva en C</h5>
+                                <img class="materialboxed" src="img/bbrecursive.png">
+                            </div>
                         </div>
-                        <div class="card-action">
-                            <a href="#">Link</a>
-                            <a href="#">Link</a>
                         </div>
+
                     </div>
                 </div>
-                <div class="col s12 m4 14">
-                </div>
+            
             </div>
         </div>
         
-        <div class="container  portfolio">
-            <h5>Portafolio</h5>
-            <h6>Proyectos recientes</h6>
-            <hr>
-            <div class="row">
-                <div class="col s12 m12 l12 portfolio-holder">
-                    <img class="materialboxed" src="http://labs.qnimate.com/portfolio-materialize/images/project.png">
-                    <img class="materialboxed" src="http://labs.qnimate.com/portfolio-materialize/images/project.png">
-                    <img class="materialboxed" src="http://labs.qnimate.com/portfolio-materialize/images/project.png">
-                    <img class="materialboxed" src="http://labs.qnimate.com/portfolio-materialize/images/project.png">
-                    <img class="materialboxed" src="http://labs.qnimate.com/portfolio-materialize/images/project.png">
-                    <img class="materialboxed" src="http://labs.qnimate.com/portfolio-materialize/images/project.png">
-                </div>
-            </div>
-        </div>
         
         <footer>
           <div class="footer-copyright">

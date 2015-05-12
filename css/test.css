@@ -95,9 +95,9 @@ body, html
 
 .portfolio img
 {
-    width: 33%;
+    width: 75%;
     display: inline-block;
-    float: left;
+    float: center;
 }
 
 .contact .col
