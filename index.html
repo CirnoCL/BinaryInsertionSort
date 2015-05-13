@@ -13,7 +13,7 @@
     </head>
     <meta charset="utf-8" /> 
     <body>
-        <div class="intro deep-purple lighten-2 z-depth-1">
+        <div class="intro red darken-4 z-depth-1">
             <h1 class="grey-text text-lighten-5">Insercion Binaria</h1>
             <h5 class="grey lighten-4 grey-text text-darken-1">Algoritmos y Estructuras de Datos</h5>
         </div>
@@ -24,22 +24,50 @@
                     <div class="card green-grey darken-1">
                         <div class="card-content  black-text" style="text-align: justify">
                         <h5>Busqueda Binaria</h5>
-                        Es un método que se basa en la división sucesiva del espacio ocupado por el vector en sucesivas mitades, hasta encontrar el elemento buscado.
+                        <div>
+                             Es un método que se basa en la división sucesiva del espacio ocupado por el vector en sucesivas mitades, hasta encontrar el elemento buscado.
  
-                        Esta búsqueda utiliza un método de “divide y vencerás” para localizar el valor deseado. Con este método se examina primero el elemento central de la lista; si este es el elemento buscado entonces la búsqueda ha terminado. En caso contrario se determina si el elemento buscado está en la primera o segunda mitad de la lista y a continuación se repite el proceso anterior, utilizando el elemento central de esta sublista. Este tipo de búsqueda se utiliza en vectores ordenados.
+                        Esta búsqueda utiliza un método de “divide y vencerás” para localizar el valor deseado. Con este método se examina primero el elemento central de la lista; si este es el elemento buscado entonces la búsqueda ha terminado. En caso contrario se determina si el elemento buscado está en la primera o segunda mitad de la lista y a continuación se repite el proceso anterior, utilizando el elemento central de esta sublista.
+                            Este tipo de búsqueda se utiliza en vectores ordenados.
                         <br>
                         <br>
                         Este algoritmo reduce el tiempo de búsqueda considerablemente, ya que disminuye exponencialmente el número de iteraciones necesarias.
 
                         Está altamente recomendado para buscar en arrays de gran tamaño. Por ejemplo, en uno conteniendo 50.000.000 elementos, realiza como máximo 26 comparaciones (en el peor de los casos).
+                        </div>
+                        <hr>
+                        <h5>Ejemplo</h5>
+                        <div>
+                            Dado el siguiente conjunto de de 9 datos ordenados en orden ascendente, encuentra el valor 8 (el cual lo denominaremos como nuestra llave):<br>
+                            [1 2 3 4 5 6 7 8 9]<br>
+                            <br>
+                            El primer paso es encontrar el punto medio(al ser 9 elementos, el punto medio seria (9+1)/2 lo cual seria el 5to elemento):<br>
+                            [1 2 3 4 <b>5</b> 6 7 8 9]<br>
+                            <br>
+                            El siguiente paso es comparar la llave con el 5, son iguales? obvio no, es 8 menor que 5? nope, es 8 mayor que 5? aye. Ahora sabemos que el elemento a encontrar se encuentra en la segunda parte del arreglo (si es que existe), por lo que ahora nos quedamos con:<br>
+                            [6 7 8 9]<br>
+                            <br>
+                            Se vuelve a calcular el punto medio (4+1)/2=2.5, si nos queda un resultado con decimal solo es necesario redondear el valor de cualquier manera, siguiendo la matematica de los enteros simplemente truncaremos el .5 y nuestro nuevo punto medio sera el 2do elemento:<br>
+                            [6 <b>7</b> 8 9]<br>
+                            <br>
+                            Es 7 igual a 8? nope, es 8 menor que 7? nope, es 8 mayor que 7? si. Por lo que el valor que necesitamos se encuentra en la segunda parte del arreglo y nos quedamos con:<br>
+                            [8 9]<br>
+                            <br>
+                            Volvemos a encontrar el punto medio (2+1)/2:<br>
+                            [<b>8</b> 9]<br>
+                            <br>
+                            Es 8 igual a 8? sep, y con esto encontramos el elemento a buscar.
+                        </div>
                         <hr>
                         <div class="container portfolio">
                         <div class="row">
                             <div class="col s12 m12 l12 portfolio-holder">
                                 <h5>Pseudocodigo</h5>
                                 <img class="materialboxed" src="img/bbpseudo.png">
+                                <hr>
                                 <h5>Busqueda Binaria en C</h5>
                                 <img class="materialboxed" src="img/bbcode.png">
+                                <hr>
                                 <h5>Busqueda Binaria Recursiva en C</h5>
                                 <img class="materialboxed" src="img/bbrecursive.png">
                             </div>
@@ -47,8 +75,14 @@
                         </div>
 
                     </div>
+                        
                 </div>
-            
+                <div class="card green-grey darken-1">
+                    <div class="card-content  black-text" style="text-align: justify">
+                        <h5>Insercion Binaria</h5>
+                    </div>
+                </div>
+                
             </div>
         </div>
         
